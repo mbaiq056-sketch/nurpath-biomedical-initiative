@@ -30,13 +30,38 @@
       <span></span><span></span><span></span>
     </button>
 
-    <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
-      <a href="about.html">About us</a>
-      <a href="#research">Research</a>
-      <a href="#publications">Publications</a>
-      <a href="#partnerships">Partnerships</a>
-      <a class="nav-cta" href="#contact">Get involved <span aria-hidden="true">↗</span></a>
-    </nav>
+    
+<nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+
+  <div class="publication-dropdown">
+    <button
+      class="dropdown-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="publication-menu">
+      Publications
+      <span class="dropdown-arrow" aria-hidden="true">⌄</span>
+    </button>
+
+    <div class="dropdown-menu" id="publication-menu">
+      <a href="publications.html#journals">Journals</a>
+      <a href="publications.html#articles">Articles</a>
+      <a href="publications.html#conferences">Conference proceedings</a>
+      <a href="publications.html#preprints">Preprints</a>
+      <a href="publications.html#reports">Research reports</a>
+    </div>
+  </div>
+
+  <a href="research.html">Research</a>
+  <a href="partnerships.html">Partnerships</a>
+
+  <a class="nav-cta" href="contact.html">
+    Get involved <span aria-hidden="true">↗</span>
+  </a>
+</nav>
+
   </div>
 </header>
 
