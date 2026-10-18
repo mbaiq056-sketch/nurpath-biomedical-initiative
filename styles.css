@@ -465,3 +465,79 @@
     min-height: 70px;
   }
 }
+
+/* FOUNDER PORTRAIT */
+.founder-photo-frame {
+  position: relative;
+  min-height: 520px;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 18px;
+  background: var(--navy);
+  isolation: isolate;
+}
+
+.founder-photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center 22%;
+}
+
+.founder-photo-frame::after {
+  content: "";
+  position: absolute;
+  inset: 35% 0 0;
+  z-index: 1;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(9, 30, 49, .22) 35%,
+    rgba(9, 30, 49, .94) 100%
+  );
+  pointer-events: none;
+}
+
+.founder-photo-caption {
+  position: absolute;
+  z-index: 2;
+  left: 28px;
+  right: 24px;
+  bottom: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  color: #fff;
+}
+
+.founder-photo-caption span {
+  color: var(--teal);
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+}
+
+.founder-photo-caption strong {
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(1.25rem, 2.4vw, 1.8rem);
+  line-height: 1.25;
+}
+
+.founder-photo-caption small {
+  color: rgba(255,255,255,.78);
+  font-size: .85rem;
+}
+
+@media (max-width: 760px) {
+  .founder-photo-frame {
+    min-height: 420px;
+  }
+
+  .founder-photo-caption {
+    left: 22px;
+    bottom: 22px;
+  }
+}
