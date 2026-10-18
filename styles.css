@@ -328,3 +328,140 @@
     background: #e8f5f3;
   }
 }
+
+/* ABOUT PAGE REFINEMENTS */
+.founder-visual {
+  position: relative;
+  min-height: 430px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.founder-monogram {
+  position: relative;
+  z-index: 2;
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(3.5rem, 8vw, 6rem);
+  font-weight: 800;
+  letter-spacing: -.08em;
+  color: #ffffff;
+}
+
+.founder-visual-caption {
+  position: absolute;
+  z-index: 2;
+  left: 30px;
+  right: 30px;
+  bottom: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  color: #ffffff;
+}
+
+.founder-visual-caption span {
+  color: #45c6b0;
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .15em;
+}
+
+.founder-visual-caption strong {
+  font-size: .95rem;
+}
+
+.founder-orbit {
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  border: 1px solid rgba(69,198,176,.4);
+  border-radius: 50%;
+}
+
+.founder-orbit-one {
+  transform: rotate(35deg) scaleX(1.2);
+}
+
+.founder-orbit-two {
+  transform: rotate(-35deg) scaleX(1.2);
+}
+
+.founder-focus {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.founder-focus b {
+  padding: 9px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: .75rem;
+  font-weight: 600;
+}
+
+.team-notice {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 30px;
+  align-items: start;
+  padding: 36px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: #f5f9fa;
+}
+
+.team-notice h3 {
+  margin: 10px 0 14px;
+}
+
+.team-notice p {
+  line-height: 1.8;
+}
+
+.team-notice a {
+  display: inline-block;
+  margin-top: 12px;
+  color: var(--navy);
+  font-weight: 700;
+}
+
+.team-symbol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 100px;
+}
+
+.team-symbol span {
+  display: block;
+  width: 16px;
+  height: 48px;
+  border: 2px solid var(--teal);
+  border-radius: 999px;
+}
+
+.team-symbol span:nth-child(2) {
+  transform: translateY(-12px);
+}
+
+@media (max-width: 760px) {
+  .founder-visual {
+    min-height: 340px;
+  }
+
+  .team-notice {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 24px;
+  }
+
+  .team-symbol {
+    justify-content: flex-start;
+    min-height: 70px;
+  }
+}
