@@ -128,3 +128,86 @@
     padding-bottom: 40px;
   }
 }
+
+/* Home refinement: vision, mission and values */
+#principles .split-grid {
+  gap: 72px;
+  align-items: start;
+}
+
+#principles .side-intro {
+  max-width: 390px;
+  margin-top: 20px;
+}
+
+#principles .principle-list article {
+  padding: 24px 0;
+}
+
+#principles .principle-list h3 {
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+
+#principles .principle-list p {
+  max-width: 590px;
+  font-size: 12px;
+  line-height: 1.85;
+}
+
+/* Home refinement: stronger closing section */
+#contact {
+  padding-top: 78px;
+  padding-bottom: 78px;
+}
+
+#contact .contact-layout {
+  gap: 65px;
+  align-items: start;
+}
+
+#contact h2 {
+  max-width: 510px;
+}
+
+#contact .contact-copy {
+  padding-top: 10px;
+}
+
+#contact .contact-copy > p:first-child {
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+#contact .contact-placeholder {
+  padding: 24px;
+  transition: border-color 0.2s ease;
+}
+
+#contact .contact-placeholder:hover {
+  border-color: #a8dcd4;
+}
+
+/* Responsive refinements */
+@media (max-width: 760px) {
+  #principles .split-grid {
+    gap: 30px;
+  }
+
+  #principles .principle-list article {
+    padding: 19px 0;
+  }
+
+  #contact {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  #contact .contact-layout {
+    gap: 20px;
+  }
+
+  #contact .contact-copy {
+    padding-top: 0;
+  }
+}
