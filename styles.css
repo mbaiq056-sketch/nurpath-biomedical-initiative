@@ -107,3 +107,24 @@
     padding-bottom: 28px;
   }
 }
+/* About Us: compact collaboration call-to-action */
+.about-cta-section {
+  padding-top: 24px;
+  padding-bottom: 64px;
+}
+
+.about-cta-section h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.about-cta-section p {
+  margin-bottom: 18px;
+}
+
+@media (max-width: 760px) {
+  .about-cta-section {
+    padding-top: 24px;
+    padding-bottom: 40px;
+  }
+}
