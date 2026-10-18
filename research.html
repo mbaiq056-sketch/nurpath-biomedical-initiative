@@ -18,8 +18,10 @@
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 
+
 <header class="site-header">
   <div class="container nav-wrap">
+
     <a class="brand" href="index.html" aria-label="NURPATH home">
       <img src="assets/nurpath-mark.svg" alt="" width="42" height="42">
       <span class="brand-copy">
@@ -28,24 +30,51 @@
       </span>
     </a>
 
-    <button class="menu-toggle"
+    <button
+      class="menu-toggle"
+      type="button"
       aria-label="Open navigation menu"
       aria-expanded="false"
       aria-controls="primary-nav">
-      <span></span><span></span><span></span>
+      <span></span>
+      <span></span>
+      <span></span>
     </button>
 
     <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
-      <a href="about.html">About us</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+
+      <div class="publication-dropdown">
+        <button
+          class="dropdown-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="publication-menu">
+          Publications
+          <span class="dropdown-arrow" aria-hidden="true">⌄</span>
+        </button>
+
+        <div class="dropdown-menu" id="publication-menu">
+          <a href="publications.html#journals">Journals</a>
+          <a href="publications.html#articles">Articles</a>
+          <a href="publications.html#conferences">Conference proceedings</a>
+          <a href="publications.html#preprints">Preprints</a>
+          <a href="publications.html#reports">Research reports</a>
+        </div>
+      </div>
+
       <a href="research.html" aria-current="page">Research</a>
-      <a href="publications.html">Publications</a>
       <a href="partnerships.html">Partnerships</a>
+
       <a class="nav-cta" href="contact.html">
         Get involved <span aria-hidden="true">↗</span>
       </a>
     </nav>
+
   </div>
 </header>
+
 
 <main id="main">
 
