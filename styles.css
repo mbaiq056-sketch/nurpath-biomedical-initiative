@@ -82,14 +82,28 @@
     white-space: normal;
   }
 }
+/* About Us: balanced section spacing */
 .about-detail-section {
-  padding-top: 48px;
-  padding-bottom: 48px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.about-detail-section h2 {
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+
+.about-detail-section p {
+  margin-bottom: 16px;
+}
+
+.about-detail-section .eyebrow {
+  margin-bottom: 14px;
 }
 
 @media (max-width: 760px) {
   .about-detail-section {
-    padding-top: 36px;
-    padding-bottom: 36px;
+    padding-top: 28px;
+    padding-bottom: 28px;
   }
 }
