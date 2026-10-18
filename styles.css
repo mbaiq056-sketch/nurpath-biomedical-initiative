@@ -40,3 +40,45 @@
 .founder-note{font-size:10px;line-height:1.8;color:#83939d;margin:14px 0 0}
 @media(max-width:1000px){.founder-layout{gap:48px}}
 @media(max-width:760px){.founder-layout{grid-template-columns:1fr;gap:28px}.founder-visual{min-height:300px}.founder-monogram{width:135px;height:135px;font-size:37px}.founder-copy{padding:0}.founder-copy h2{font-size:39px}}
+
+
+/* Founder commitment — spacing and mobile layout */
+.founder-focus {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 12px;
+  margin-top: 26px;
+  padding: 22px 0;
+}
+
+.founder-focus > span {
+  flex: 0 0 100%;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.founder-focus > b {
+  display: inline-flex;
+  align-items: center;
+  padding: 9px 12px;
+  border-radius: 4px;
+  background: #edf7f6;
+  color: #28566a;
+  font-size: 11px;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+@media (max-width: 760px) {
+  .founder-focus {
+    gap: 9px;
+    margin-top: 22px;
+    padding: 20px 0;
+  }
+
+  .founder-focus > b {
+    max-width: 100%;
+    white-space: normal;
+  }
+}
