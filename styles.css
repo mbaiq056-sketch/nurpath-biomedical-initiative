@@ -82,3 +82,14 @@
     white-space: normal;
   }
 }
+.about-detail-section {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+@media (max-width: 760px) {
+  .about-detail-section {
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+}
